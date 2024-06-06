@@ -305,7 +305,7 @@
 .footer{
         padding-left: 270px;
         background-color: #07070B;
-        width: 113%;
+        width: 100%;
 
     }
     .footer img{
@@ -348,19 +348,6 @@
     .firstElement{
         padding-top: 20px;
     }
-    @media (max-width: 768px) {
-    .header-image p {
-        padding: 350px 0 0 50px;
-        font-size: 32px;
-    }
-    .header-value ol {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-        padding: 20px;
-        
-    }
-}
     @media (max-width: 1700px) {
         .card-seller{
             display: grid;
@@ -375,4 +362,78 @@
             gap: 1em;
         }
     }
+    @media (max-width: 768px) {
+    .header-value img {
+        margin-left: 0px;
+        width: 150px;
+        padding-left: 0;
+}
+        .cost-info{
+            padding-left: 30px;
+        }
+        .container-info{
+            padding-left: 30px;
+        }
+        .card-seller{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .header-value ol {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+        margin-right: 0;
+    }
+    .button {
+        padding-left: 50px;
+    }
+    .main-content {
+        padding: 50px 20px;
+    }
+    .about-us p, .more-info h2, .more-info p {
+        font-size: 18px;
+    }
+    .footer {
+        padding: 50px 20px;
+        height: auto;
+    }
+    .footer p {
+        padding-left: 0;
+        text-align: center;
+    }
+@media (max-width: 1205px) {
+    .info-container,
+    .info-containers{
+        font-size: 13px;
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+    .info-container img{
+        width: 100%;
+    }
+    .info-containers img{
+        width: 100%;
+    }
+    .footer {
+        padding: 40px 40px;
+        height: auto;
+    }
+    .footer p {
+        text-align: center;
+        font-size: 16px;
+    }
+    .footer-li {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (max-width: 670px) {
+    .card-seller{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+
+}
     </style>
