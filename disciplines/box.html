@@ -13,7 +13,7 @@
     <div class="header-image">
         <div class="header-value">
             <a href="../index.html">
-            <img src="/assets/Logo.png">
+            <img src="../assets/Logo.png">
         </a>
             <ol>
                 <li> <a href="../disciplines.html">Дисциплины</a></li>
@@ -23,6 +23,7 @@
                 <li><a href="../contact.html">Контакты</a></li>
             </ol>
         </div>  
+    </div>  
     <div class="main-content">
     <div class="content-container">
         <h2 >Как проходят тренировки по боксу</h2>
@@ -42,11 +43,11 @@
 
     <div class="photo-gallery">
         <img src="../assets/box/box1.png"  style="padding: 40px  0 0 0">    
-        <img src="../assets/box/box2.png"  style="padding: 40px  0 0 40px">
-        <img src="../assets/box/box3.png"  style="padding: 40px  0 0 40px">
+        <img src="../assets/box/box2.png"  style="padding: 40px  0 0 0px">
+        <img src="../assets/box/box3.png"  style="padding: 40px  0 0 0px">
         <img src="../assets/box/box4.png" style="padding: 40px  0 0 0">
-        <img src="../assets/box/box5.png" style="padding: 40px  0 0 40px">
-        <img src="../assets/box/box6.png"  style="padding: 40px  0 0 40px">
+        <img src="../assets/box/box5.png" style="padding: 40px  0 0 0px">
+        <img src="../assets/box/box6.png"  style="padding: 40px  0 0 0px">
     </div>
 
 
@@ -117,7 +118,7 @@
     <div class="footer-content">
 
     
-    <img src="/assets/footerLogo.png">
+    <img src="../assets/footerLogo.png">
     <p>Спортивная школа единоборств</p>
         </div>
 
@@ -267,7 +268,7 @@
     }
     .footer p{
         padding-top: 3%;
-        padding-left: 600px;
+        padding-left:40%;
         font-size: 20px;
     }
     .footer-content{
@@ -302,39 +303,68 @@
     .firstElement{
         padding-top: 20px;
     }
-    @media (min-width: 1024px) and (max-width: 1440px) {
-    .header-image {
-        height: 800px; /* Меньше высоты, чем на больших экранах */
+@media (max-width: 768px) {
+    .photo-gallery img{
+        width: 100%;
     }
-    .header-value img {
-        padding-left: 100px; /* Смещение логотипа */
-    }
+        .disciplines-about ol {
+            display: grid;
+            grid-template-columns:repeat(2, 1fr);
+        }
     .header-image p {
-        padding: 400px 0 0 100px; /* Позиционирование заголовка */
-        font-size: 48px; /* Меньший размер шрифта для заголовка */
+        padding: 350px 0 0 50px;
+        font-size: 32px;
     }
     .header-value ol {
-        gap: 30px; /* Уменьшенные отступы между элементами меню */
-        margin-right: 100px; /* Уменьшенное расстояние справа */
-   
-     } }
-     @media (min-width: 760px) and (max-width: 1050px) {
-    .header-image {
-        height: 700px; /* Адаптация высоты заголовочного изображения */
-    }
-    .header-value img {
-        padding-left: 50px; /* Коррекция положения логотипа */
-    }
-    .header-image p {
-        padding: 300px 0 0 50px; /* Коррекция положения и размера текста в заголовке */
-        font-size: 40px; /* Уменьшенный размер шрифта для заголовка */
-    }
-    .header-value ol {
-        flex-direction: column; /* Элементы меню в вертикальной колонке */
+        flex-direction: column;
         align-items: flex-start;
         gap: 20px;
-        padding: 20px;
-        margin-right: 20px;
+        padding: 0px;
+        margin-right: 0;
     }
+    .button {
+        padding-left: 50px;
     }
+    .main-content {
+        padding: 50px 20px;
+    }
+    .about-us p, .more-info h2, .more-info p {
+        font-size: 18px;
+    }
+    .content{
+padding-left: 100px;
+}
+    .header-value img {
+    padding-left: 150px;
+}
+.footer-li p{
+    padding: 0;
+}
+.type-sport{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.disciplines-about li{
+    font-size: 16px;
+    
+}
+.footer {
+        height: auto;
+        padding-left: 0px;
+    }
+    .footer p {
+        text-align: center;
+        font-size: 16px;
+    }
+    .footer-li {
+        flex-direction: column;
+        gap: 20px; 
+    }
+    .header-value img {
+        margin-left: -160px;
+        width: 150px;
+    }
+}
+
+    
 </style>

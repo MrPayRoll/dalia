@@ -13,7 +13,7 @@
     <div class="header-image">
         <div class="header-value">
             <a href="../index.html">
-            <img src="/assets/Logo.png">
+            <img src="../assets/Logo.png">
         </a>
             <ol>
                 <li> <a href="../disciplines.html">Дисциплины</a></li>
@@ -41,12 +41,12 @@
     
     
         <div class="photo-gallery">
-            <img src="/assets/cambo/1.png" class="gallery-image">    
-            <img src="/assets//cambo/2.png" class="gallery-image">
-            <img src="/assets/cambo/3.png" class="gallery-image">
-            <img src="/assets/cambo/4.png" class="gallery-image">
-            <img src="/assets/cambo/5.png" class="gallery-image">
-            <img src="/assets/cambo/6.png" class="gallery-image">
+            <img src="../assets/cambo/1.png" class="gallery-image">    
+            <img src="../assets//cambo/2.png" class="gallery-image">
+            <img src="../assets/cambo/3.png" class="gallery-image">
+            <img src="../assets/cambo/4.png" class="gallery-image">
+            <img src="../assets/cambo/5.png" class="gallery-image">
+            <img src="../assets/cambo/6.png" class="gallery-image">
         </div>
     
     
@@ -71,7 +71,7 @@
                     <p style="font-size: 20px; padding-top: 10px;"> Первое занятие - пробное<br> Далее - 700 руб.</p>
     
                     <h4 style="padding-top: 27px; font-size: 18px;">Дисциплина - <b style="color: #B3E96F;"> самбо</b></h4>
-                    <img src="/assets/GreenLogo.png" style="margin-left: 120px;">
+                    <img src="../assets/GreenLogo.png" style="margin-left: 120px;">
                     
                 </div>
                 <div class="card-items">
@@ -79,7 +79,7 @@
                     <p style="font-size: 20px; padding-top: 10px;"> 3.600 руб<br> <strike style="padding-left: 0;">5.000 руб</strike></p>
     
                     <h4 style="padding-top: 27px; font-size: 18px;">Дисциплина - <b style="color: #B3E96F;"> самбо</b></h4>
-                    <img src="/assets/GreenLogo.png" style="margin-left: 120px;">
+                    <img src="../assets/GreenLogo.png" style="margin-left: 120px;">
                     
                 </div>
                 <div class="card-items">
@@ -87,7 +87,7 @@
                     <p style="font-size: 20px; padding-top: 10px;"> 40.000 руб<br> <strike style="padding-left: 0;">45.000 руб</strike></p>
     
                     <h4 style="padding-top: 27px; font-size: 18px;">Дисциплина - <b style="color: #B3E96F;"> самбо</b></h4>
-                    <img src="/assets/GreenLogo.png" style="margin-left: 120px;">
+                    <img src="../assets/GreenLogo.png" style="margin-left: 120px;">
                     
                 </div>
     
@@ -113,7 +113,7 @@
         <div class="footer-content">
     
         
-        <img src="/assets/footerLogo.png">
+        <img src="../assets/footerLogo.png">
         <p>Спортивная школа единоборств</p>
             </div>
     
@@ -223,6 +223,68 @@
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+}
+@media (max-width: 768px) {
+    .photo-gallery img{
+        width: 100%;
+    }
+        .disciplines-about ol {
+            display: grid;
+            grid-template-columns:repeat(2, 1fr);
+        }
+    .header-image p {
+        padding: 350px 0 0 50px;
+        font-size: 32px;
+    }
+    .header-value ol {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 0px;
+        margin-right: 0;
+    }
+    .button {
+        padding-left: 50px;
+    }
+    .main-content {
+        padding: 50px 20px;
+    }
+    .about-us p, .more-info h2, .more-info p {
+        font-size: 18px;
+    }
+    .content{
+padding-left: 100px;
+}
+    .header-value img {
+    padding-left: 150px;
+}
+.footer-li p{
+    padding: 0;
+}
+.type-sport{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.disciplines-about li{
+    font-size: 16px;
+    
+}
+.footer {
+        height: auto;
+        padding-left: 0px;
+    }
+    .footer p {
+        text-align: center;
+        font-size: 16px;
+    }
+    .footer-li {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header-value img {
+        margin-left: -160px;
+        width: 150px;
+    }
 }
     </style>
     </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/other.css">
+    <link rel="stylesheet" href="../other.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
         <div class="header-image">
             <div class="header-value">
                 <a href="../index.html">
-                <img src="/assets/Logo.png">
+                <img src="../assets/Logo.png">
             </a>
                 <ol>
                     <li> <a href="../disciplines.html">Дисциплины</a></li>
@@ -42,12 +42,12 @@
     
     
         <div class="photo-gallery">
-            <img src="/assets/karate/1.png"  style="padding: 40px  0 0 0">    
-            <img src="/assets/karate/2.png"  style="padding: 40px  0 0 40px">
-            <img src="/assets/karate/3.png"  style="padding: 40px  0 0 40px">
-            <img src="/assets/karate/4.png" style="padding: 40px  0 0 0">
-            <img src="/assets/karate/5.png" style="padding: 40px  0 0 40px">
-            <img src="/assets/karate/6.png"  style="padding: 40px  0 0 40px">
+            <img src="../assets/karate/1.png"  style="padding: 40px  0 0 0">    
+            <img src="../assets/karate/2.png"  style="padding: 40px  0 0 0px">
+            <img src="../assets/karate/3.png"  style="padding: 40px  0 0 0px">
+            <img src="../assets/karate/4.png" style="padding: 40px  0 0 0">
+            <img src="../assets/karate/5.png" style="padding: 40px  0 0 0px">
+            <img src="../assets/karate/6.png"  style="padding: 40px  0 0 0px">
         </div>
     
     
@@ -73,7 +73,7 @@
                     <p style="font-size: 20px; padding-top: 10px;"> Первое занятие - пробное<br> Далее - 700 руб.</p>
     
                     <h4 style="padding-top: 27px; font-size: 18px;">Дисциплина - <b style="color: #B3E96F;"> каратэ</b></h4>
-                    <img src="/assets/GreenLogo.png" style="margin-left: 120px;">
+                    <img src="../assets/GreenLogo.png" style="margin-left: 120px;">
                     
                 </div>
                 <div class="card-items">
@@ -81,7 +81,7 @@
                     <p style="font-size: 20px; padding-top: 10px;"> 3.700 руб<br> <strike style="padding-left: 0;">5.000 руб</strike></p>
     
                     <h4 style="padding-top: 27px; font-size: 18px;">Дисциплина - <b style="color: #B3E96F;"> каратэ</b></h4>
-                    <img src="/assets/GreenLogo.png" style="margin-left: 120px;">
+                    <img src="../assets/GreenLogo.png" style="margin-left: 120px;">
                     
                 </div>
                 <div class="card-items">
@@ -89,7 +89,7 @@
                     <p style="font-size: 20px; padding-top: 10px;"> 40.000 руб<br> <strike style="padding-left: 0;">45.000 руб</strike></p>
     
                     <h4 style="padding-top: 27px; font-size: 18px;">Дисциплина - <b style="color: #B3E96F;"> каратэ</b></h4>
-                    <img src="/assets/GreenLogo.png" style="margin-left: 120px;">
+                    <img src="../assets/GreenLogo.png" style="margin-left: 120px;">
                     
                 </div>
     
@@ -115,7 +115,7 @@
         <div class="footer-content">
     
         
-        <img src="/assets/footerLogo.png">
+        <img src="../assets/footerLogo.png">
         <p>Спортивная школа единоборств</p>
             </div>
     
@@ -171,5 +171,67 @@
 .header-value ol li a {
     text-decoration: none;
     cursor: pointer;
+}
+@media (max-width: 768px) {
+    .photo-gallery img{
+        width: 100%;
+    }
+        .disciplines-about ol {
+            display: grid;
+            grid-template-columns:repeat(2, 1fr);
+        }
+    .header-image p {
+        padding: 350px 0 0 50px;
+        font-size: 32px;
+    }
+    .header-value ol {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 0px;
+        margin-right: 0;
+    }
+    .button {
+        padding-left: 50px;
+    }
+    .main-content {
+        padding: 50px 20px;
+    }
+    .about-us p, .more-info h2, .more-info p {
+        font-size: 18px;
+    }
+    .content{
+padding-left: 100px;
+}
+    .header-value img {
+    padding-left: 150px;
+}
+.footer-li p{
+    padding: 0;
+}
+.type-sport{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.disciplines-about li{
+    font-size: 16px;
+    
+}
+.footer {
+        height: auto;
+        padding-left: 0px;
+    }
+    .footer p {
+        text-align: center;
+        font-size: 16px;
+    }
+    .footer-li {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header-value img {
+        margin-left: -160px;
+        width: 150px;
+    }
 }
     </style>
